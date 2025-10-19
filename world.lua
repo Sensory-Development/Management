@@ -1,1 +1,1 @@
-print("hello world!")
+print("kyper and anozyt own you")
