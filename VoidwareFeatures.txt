@@ -1,1 +1,31 @@
+1: Fakelag: Simulates lag by adding a delay to the packets you send to the server.
+Mode
+Determines the method this module will use in how to delay your packets.
+
+Latency
+Adds a constant amount of delay to your packets.
+
+Dynamic
+Dynamically adjusts your connection speed in order to give you advantages in combat.
+
+Repel
+Tunes FakeLag with the goal of keeping your opponent as far away from you as possible.
+
+Transmission Offset
+Higher values may make your connection more unstable, which may be a disadvantage or an advantage based on your original connection to the server.
+
+Delay
+The amount of delay (in milliseconds) to wait for, before sending any given packet to the server. If you regularly have 50ms to a server, and this is set to 100ms, then you will effectively be playing on 150ms.
+
+2: Backtrack: Allows you to hit players at their previous positions.
+Mode
+The manner in which the module operates.
+
+Manual: Allows you to directly hit players at their previous positions, without modifying your connection.
+Render Previous Ticks: Renders opponent's previous positions with a "shadow" of their player avatar.
+Ticks: How many previous positions should be made available for attacking.
+Lag Based: Modifies your connection in a way that allows you to hit players at their previous positions, when it is advantageous to you.
+Render Server Pos: Renders the opponent's last known server side position, while your connection is being controlled by the module.
+Color: What color to shade the opponent's "shadow" with.
+Latency: The amount of lag added to your connection at advantageous moments.
 
