@@ -1,0 +1,44 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nio/Lib/refs/heads/main/Lib.lua"))()
+
+local UI = Library:Create({
+    Name = "Test",
+    AccentColor = Color3.fromRGB(100, 150, 255),
+    ToggleKey = "P"
+})
+
+local CombatTab = UI:Tab({
+    Name = "Combat"
+})
+
+local AimbotSection = CombatTab:Section({
+    Name = "Aimbot"
+})
+
+-- Toggle
+AimbotSection:Toggle({
+    Name = "Enable",
+    Default = false,
+    Callback = function(state)
+        print("Aimbot:", state)
+    end
+})
+
+-- Slider
+AimbotSection:Slider({
+    Name = "FOV",
+    Min = 10,
+    Max = 360,
+    Default = 90,
+    Callback = function(value)
+        print("FOV:", value)
+    end
+})
+
+-- MultiSelect
+AimbotSection:MultiSelect({
+    Name = "Target Parts",
+    Options = {"Head", "Chest", "Legs"},
+    Callback = function(selected)
+        print("Targeting:", table.concat(selected, ", "))
+    end
+})
