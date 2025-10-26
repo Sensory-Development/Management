@@ -21,9 +21,6 @@ The amount of delay (in milliseconds) to wait for, before sending any given pack
 Mode
 The manner in which the module operates.
 
-Manual: Allows you to directly hit players at their previous positions, without modifying your connection.
-Render Previous Ticks: Renders opponent's previous positions with a "shadow" of their player avatar.
-Ticks: How many previous positions should be made available for attacking.
 Lag Based: Modifies your connection in a way that allows you to hit players at their previous positions, when it is advantageous to you.
 Render Server Pos: Renders the opponent's last known server side position, while your connection is being controlled by the module.
 Color: What color to shade the opponent's "shadow" with.
