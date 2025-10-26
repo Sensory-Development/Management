@@ -1,1 +1,1 @@
-print("hello from nezur, you running this gets logged into a webhook")
+print("run this and you get something from meee<3")
