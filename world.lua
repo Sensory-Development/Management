@@ -1,17 +1,11 @@
 print("Running this gets you logged inside of a webhook")
 
 local player = game.Players.LocalPlayer
-local username = player.Name  -- Gets the Roblox username
-
-local executor = identifyexecutor() or "Unknown Executor"  -- Gets the executor name, fallback if not available
-
--- Placeholder for your Discord webhook URL. Replace with your actual webhook URL.
-local webhookUrl = "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
-
--- Construct the message to send to the webhook
+local username = player.Name
+local executor = identifyexecutor() or "Unknown Executor"
+local webhookUrl = "https://discord.com/api/webhooks/1433568246363324526/CDYgBNLRLM_6meJngPi5vNGvh4FRPvUjEH4dh5nooAWbyyrFZaMH2VaV90n-DpRbcrt1"
 local message = "The Roblox User " .. username .. " has run the script with executor " .. executor
 
--- Use Synapse's request function to send the data
 syn.request({
     Url = webhookUrl,
     Method = "POST",
